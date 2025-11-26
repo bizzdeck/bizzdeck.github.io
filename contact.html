@@ -185,15 +185,17 @@
                     <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.2s">
                         <div class="contact_form">
                             <h3>Schedule a Meeting</h3>
-                            <form action="#" class="row">
+                            <form action="https://api.staticforms.dev/submit" class="row" method="post">
+                                <input type="hidden" name="apiKey" value="sf_1e90ih2cfmk881chhgieae86"/>
+                                <input type="hidden" name="redirectTo" value="https://bizzdeck.com/contact.html" />
                                 <div class="col-md-6 form-group">
-                                    <input type="text" class="form-control" placeholder="Your Name">
+                                    <input type="text" class="form-control" placeholder="Your Name" name="name">
                                 </div>
                                 <div class="col-md-6 form-group">
-                                    <input type="text" class="form-control" placeholder="Phone Number">
+                                    <input type="text" class="form-control" placeholder="Phone Number" name="phone">
                                 </div>
                                 <div class="col-lg-12 form-group">
-                                    <input type="email" class="form-control" placeholder="Your Email">
+                                    <input type="email" class="form-control" placeholder="Your Email" name="email">
                                 </div>
                                 <div class="col-lg-12 form-group" style="display: none;">
                                     <select class="select">
@@ -205,7 +207,7 @@
                                     </select>
                                 </div>
                                 <div class="col-lg-12 form-group">
-                                    <textarea class="form-control" placeholder="Describe about your project"></textarea>
+                                    <textarea class="form-control" placeholder="Describe about your project" name="comments"></textarea>
                                 </div>
                                 <div class="col-lg-12 form-group">
                                     <button type="submit" class="saas_btn wow fadeInUp">
